@@ -1,0 +1,163 @@
+.conteudo{
+    font-weight: 700;
+    grid-area: conteudo;
+    padding: 0 2rem;
+}
+/*////////////////////////////DESTAQUES//////////////////////////*/
+.destaques{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 33.33%);
+    height: calc(100vh - 50px);
+    grid-gap: 0.2rem;
+}
+
+.destaques__titulo{
+    background-color: rgba(0,0,0,.5);
+    color: var(--Font-Cor-Branca);
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.caixa{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.destaques__principal{
+    background: url('../img/fortnite.jpg') center / cover no-repeat;
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.destaques__secundario:nth-child(2){
+    background: url('../img/pubg.jpg') center / cover no-repeat;
+    grid-area: 1 / 4 / 1 / 4;
+}
+
+.destaques__secundario:nth-child(3){
+    background: url('../img/slack.png') center / cover no-repeat;
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+.destaques__secundario:nth-child(4){
+    background: url('../img/whatsapp.png') center / cover no-repeat;
+    grid-area: 3 / 4 / 3 / 4;
+}
+
+.destaques__secundario:nth-child(5){
+    background: url('../img/cs-go.jpg') center / cover no-repeat;
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+.destaques__categorias{
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+.destaques__categorias___lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.destaques__categorias___item{
+    background-color: var(--Fundo-Branco);
+    display: flex;
+    align-items: center;
+    border-left: var(--Fundo-Branco-Categorias);
+    color: var(--Font-Cor-Preta);
+    padding: 1rem;
+    width: 44%;
+}
+
+.destaques__categorias___link{
+    color: inherit;
+}
+
+/*////////////////////////////////POPULARES///////////////////////////*/
+
+.populares{
+    padding: 3rem 0;
+}
+
+.populares__conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: conteudo;
+    padding: 1rem 0;
+}
+
+.populares__card{
+    background-color: var(--Fundo-Branco-Categorias);
+    display: grid;
+    grid-template-areas: 
+        "card-imagem"
+        "card-corpo"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 173px auto;
+    margin-right: 1rem;
+    width: calc(20% - 1rem);
+}
+
+
+.populares__card:last-child{
+    margin-right: 0;
+}
+
+.populares__card___imagem{
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo{
+    grid-area: card-corpo;
+    padding: .75rem;
+    display: grid;
+    grid-template-areas: 
+     "card-cabecario"
+     "card-conteudo"
+    ;
+    grid-template-rows: 50px auto;
+    grid-row-gap: .5rem;
+}
+
+.populares__card___titulo{
+    font-size: 1.5rem;
+    color: var(--Font-Cor-Preta);
+}
+
+.populares__card___data{
+    font-size: .9rem;
+    color: var(--Font-Cor-Cinza);
+}
+
+.populares__card___descricao{
+    color: var(--Font-Cor-Preta);
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.populares__titulo{
+    font-weight: 500;
+}
+
+.populares__icone{
+    margin-right: 1rem;
+}
+
+.populares__cabecalho{
+    border-bottom: 1px solid var(--Font-Cor-Branco-Borda);
+    display: flex;
+    justify-content: space-between;
+}
+
+.populares__botao{
+    background: transparent;
+    border: none;
+    color: var(--Font-Cor-Preta);
+}

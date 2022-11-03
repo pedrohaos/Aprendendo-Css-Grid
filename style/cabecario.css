@@ -1,0 +1,16 @@
+.cabecario{
+    display: flex;
+    align-items: center;
+    grid-area: cabecalho;
+    padding: 0 2rem;
+}
+
+.menu__link{
+    text-decoration: none;
+    color: var(--Font-Cor-Preta);
+    padding: .5rem 1rem;
+}
+
+.menu__link:hover, .menu__link.ativo{
+    border-bottom: 2px solid var(--Font-Cor-Azul-Borda);
+}

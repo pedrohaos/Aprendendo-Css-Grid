@@ -1,0 +1,8 @@
+.rodape{
+    grid-area: rodape;
+    background-color: var(--Fundo-Branco-Categorias);
+    color: var(--Font-Cor-Preta);
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+@import url("./reset.css");
+@import url("./cabecario.css");
+@import url("./conteudo.css");
+@import url("./rodape.css");
+
+:root{
+    --Fundo-Branco: #F1F1F1;
+    --Fundo-verde: #00CC99;
+    --Fundo-vermelho: #FF8080;
+    --Fundo-azul: #0099FF;
+    --Fundo-Branco-Categorias: #FDFDFD;
+    --Font-Cor-Preta: #333333;
+    --Font-Cor-Branca: #FDFDFD;
+    --Font-Cor-Cinza: #808080;
+    --Font-Cor-Branco-Borda: #DCDCDC;
+    --Font-Cor-Azul-Borda: #0073E6;
+    --Font-Principal: Arial, Helvetica, sans-serif;
+}
+
+.app{
+    background-color: var(--Fundo-Branco);
+    font-family: var(--Font-Principal);
+    display: grid;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+} 
